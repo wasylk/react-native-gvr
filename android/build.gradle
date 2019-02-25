@@ -31,8 +31,8 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.google.vr:sdk-videowidget:1.40.0'
-    compile 'com.google.vr:sdk-panowidget:1.40.0'
+    compile 'com.google.vr:sdk-videowidget:1.80.0'
+    compile 'com.google.vr:sdk-panowidget:1.80.0'
     compile 'commons-io:commons-io:2.5'
 }
   
