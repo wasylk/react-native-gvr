@@ -28,7 +28,7 @@ RCT_EXPORT_VIEW_PROPERTY(enableInfoButton, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(displayMode, NSString);
 RCT_EXPORT_VIEW_PROPERTY(image, UIImage);
 RCT_EXPORT_VIEW_PROPERTY(imageUrl, NSString);
-
+RCT_EXPORT_VIEW_PROPERTY(enablePureTouchTracking, BOOL);
 
 
 @end
