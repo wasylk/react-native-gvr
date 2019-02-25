@@ -61,6 +61,7 @@ public class PanoramaView extends RelativeLayout {
         panoWidgetView.setEventListener(new ActivityEventListener());
         panoWidgetView.setStereoModeButtonEnabled(false);
         panoWidgetView.setInfoButtonEnabled(false);
+        panoWidgetView.setPureTouchTrackingEnabled(true);
         panoWidgetView.setFullscreenButtonEnabled(false);
         this.addView(panoWidgetView);
 
