@@ -118,11 +118,6 @@ RCT_ENUM_CONVERTER(GVRWidgetDisplayMode, (@{
   _panoView.enableCardboardButton = enableCardboardButton;
 }
 
--(void)setPureTouchTracking:(BOOL)setPureTouchTracking
-{
-  _panoView.setPureTouchTracking = setPureTouchTracking;
-}
-
 #pragma mark - GVRWidgetViewDelegate
 
 - (void)widgetView:(GVRWidgetView *)widgetView didLoadContent:(id)content {
