@@ -6,7 +6,7 @@
  */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { requireNativeComponent, Image } from 'react-native'
+import { requireNativeComponent, Image, Platform } from 'react-native'
 
 class PanoramaView extends Component {
   render () {
@@ -14,6 +14,7 @@ class PanoramaView extends Component {
   }
 }
 
+const componentName = Platform.OS === 'ios' ? 'Panorama' : 'RNGoogleVRPanorama';
 // requireNativeComponent automatically resolves this to "PanoramaManager"
-var RCTPanoramaView = requireNativeComponent('RNGoogleVRPanorama', PanoramaView)
+var RCTPanoramaView = requireNativeComponent(componentName, PanoramaView)
 export default PanoramaView
