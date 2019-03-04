@@ -82,7 +82,7 @@ RCT_ENUM_CONVERTER(GVRWidgetDisplayMode, (@{
 - (void)setImage:(UIImage *)image
 {
   // Load the image
-  [_panoView loadImage:image ofType:kGVRPanoramaImageTypeStereoOverUnder];
+  [_panoView loadImage:image ofType:kGVRPanoramaImageTypeMono];
 
 }
 
