@@ -19,7 +19,7 @@
 
 @property (nonatomic, weak) RCTBridge *bridge;
 
-@property (nonatomic, copy) UIImage* image;
+@property (nonatomic, copy) NSString* image;
 @property (nonatomic, copy) NSString* imageUrl;
 @property (nonatomic, assign) NSString* displayMode;
 @property (nonatomic, assign) BOOL enableFullscreenButton;
