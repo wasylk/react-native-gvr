@@ -23,7 +23,7 @@ RCT_ENUM_CONVERTER(GVRWidgetDisplayMode, (@{
 
 
 @implementation PanoramaView {
-  UIImage *_image;
+  NSString *_image;
   NSString *__imageType;
   GVRPanoramaView *_panoView;
 }
@@ -79,11 +79,10 @@ RCT_ENUM_CONVERTER(GVRWidgetDisplayMode, (@{
   }
 }
 
-- (void)setImage:(UIImage *)image
+- (void)setImage:(NSString *)image
 {
-  // Load the image
-  [_panoView loadImage:image ofType:kGVRPanoramaImageTypeMono];
-
+    UIImage *_image=[UIImage imageWithContentsOfFile:image];
+    [_panoView loadImage:_image ofType:kGVRPanoramaImageTypeMono];
 }
 
 - (void)setDisplayMode:(NSString *)displayMode
